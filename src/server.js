@@ -45,7 +45,11 @@ app.use((req,res,next)=>{
   }
 })
 
-mongoose.connect(process.env.MONGO_CONNECT,{useNewUrlParser: true, useUnifiedTopology: true} ).then(()=>
-  app.listen(port, () => {
-  console.log("Server is running " + port)
-}))
+app.listen(port, () => {
+  console.log("Server is running " + port)})
+
+
+// mongoose.connect(process.env.MONGO_CONNECT,{useNewUrlParser: true, useUnifiedTopology: true} ).then(()=>
+//   app.listen(port, () => {
+//   console.log("Server is running " + port)
+// }))
