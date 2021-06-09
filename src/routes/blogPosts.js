@@ -40,6 +40,7 @@ bpRouter.post("/post/:author_id",checkBlogPostSchema,checkValidationResult, asyn
 
 bpRouter.get('/:id/email', async (req, res, next) =>{
   try {
+    console.log('s')
   } catch (error) {
   }
 })
